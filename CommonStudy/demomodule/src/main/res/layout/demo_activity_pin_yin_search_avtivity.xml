@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tradwang.commonstudy.activity.PinYinSearchActivity">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="哈啊哈  傻嘎 手动阀 手动阀 发射 点发 生了就  发 色打 发士大 夫  破 请问u 日期 日 期了 咖啡 店 发 的算 法的 脾气 就 安分"/>
+
+  <android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请输入要搜索的字"
+    app:errorEnabled="true">
+    <android.support.design.widget.TextInputEditText
+      android:id="@+id/tetKeyText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:imeOptions="actionDone"/>
+  </android.support.design.widget.TextInputLayout>
+
+  <Button
+    android:id="@+id/btnSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Search"
+    android:textAllCaps="false"/>
+
+  <TextView
+    android:id="@+id/tv_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="result"/>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tradwang.demomodule.activity.DemoHomeActivity">
+
+  <Button
+    android:id="@+id/btnRxPermissions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="RxPermissions"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btnRxJava"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="RxJava"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btnRetrofit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="Retrofit"
+    android:textAllCaps="false"/>
+  <Button
+    android:id="@+id/btnRxView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="RxView"
+    android:textAllCaps="false"/>
+  <Button
+    android:id="@+id/btnCrash"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="CrashTest"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btnPinYinSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="PinYinSearchTest"
+    android:textAllCaps="false"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tradwang.commonstudy.activity.CrashTestActivity">
+
+
+  <Button
+    android:id="@+id/btn_install"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="install"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_exception_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="1/0"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_exception_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ThrowThreadException"
+    android:textAllCaps="false"/>
+
+
+  <Button
+    android:id="@+id/btn_exception_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ThrowNullPointException"
+    android:textAllCaps="false"/>
+
+  <Button
+    android:id="@+id/btn_uninstall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="uninstall"
+    android:textAllCaps="false"/>
+
+
+</LinearLayout>

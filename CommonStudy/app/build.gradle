@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+//Kotlin
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//GreenDao
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
+
+        applicationId "com.tradwang.commonstudy"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        //aRouter配置
+        kapt {
+            arguments {
+                arg("moduleName", project.getName())
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //Test
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation project(':centre')
+
+    if (!Boolean.parseBoolean(IS_DEBUG_DEMO_MODULE)) {
+        implementation project(':demomodule')
+    }
+
+    //运行时注解处理
+    kapt "com.github.bumptech.glide:compiler:$GLIDE_VERSION"
+    kapt "com.alibaba:arouter-compiler:$AROUTER_COMPILER_VERSION"
+}

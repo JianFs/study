@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tradwang.commonstudy.activity.RxPermissionActivity">
+
+  <Button
+    android:id="@+id/btn_request_phone_state"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="获取 DEVICE ID"/>
+
+  <Button
+    android:id="@+id/btn_open_overlay_permission"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="获取悬浮窗权限"/>
+
+  <Button
+    android:id="@+id/btn_open_camera"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="获取相机权限"/>
+
+</LinearLayout>

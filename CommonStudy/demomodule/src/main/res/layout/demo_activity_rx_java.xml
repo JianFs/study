@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.tradwang.commonstudy.activity.rxjava.RxJavaActivity">
+
+  <Button
+    android:id="@+id/btn_create_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="创建操作符"/>
+
+  <Button
+    android:id="@+id/btn_transform_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="变换操作符"/>
+
+  <Button
+    android:id="@+id/btn_merge_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="组合操作符"/>
+  <Button
+    android:id="@+id/btn_function_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="功能性操作符"/>
+
+  <Button
+    android:id="@+id/btn_filter_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="过滤操作符"/>
+
+  <Button
+    android:id="@+id/btn_boolean_operator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="条件操作符"/>
+
+
+</LinearLayout>

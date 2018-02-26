@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.tradwang.demomodule">
+
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+
+  <application
+    android:allowBackup="false"
+    android:icon="@mipmap/demo_ic_launcher"
+    android:label="@string/demo_app_name"
+    android:name=".debug.DemoApp"
+    android:roundIcon="@mipmap/demo_ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/BaseAppTheme">
+    <activity android:name=".activity.DemoHomeActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".activity.RxPermissionActivity">
+    </activity>
+    <activity android:name=".activity.PinYinSearchActivity">
+    </activity>
+    <activity android:name=".activity.CrashTestActivity">
+    </activity>
+    <activity android:name=".activity.rxjava.RxJavaActivity">
+    </activity>
+    <activity android:name=".activity.rxjava.RxCreateActivity">
+    </activity>
+    <activity android:name=".activity.rxjava.RxTransformActivity">
+    </activity>
+    <activity android:name=".activity.rxjava.RxMergeActivity">
+    </activity>
+    <activity android:name=".activity.RetrofitActivity">
+    </activity>
+  </application>
+
+</manifest>
